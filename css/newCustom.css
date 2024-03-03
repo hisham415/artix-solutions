@@ -1,0 +1,5 @@
+.unclickable {
+    pointer-events: none;
+    color: #999; /* optional: change color to indicate it's disabled */
+  }
+  
