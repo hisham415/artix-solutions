@@ -81,10 +81,10 @@
           <div class="links menu-wrapper">
             <ul class="list-js links-list">
               <li class="menu-item"><a class="menu-link" href="/">Home</a></li>
-
+<!-- 
               <li class="menu-item">
                 <a class="menu-link" href="about-us.html">About us </a>
-              </li>
+              </li> -->
               <li class="menu-item">
                 <a class="menu-link" href="portfolio-grid.html">Portfolio</a>
               </li>
@@ -351,21 +351,25 @@
                 
               </p>
             </div>
-            <div class="form-area ">
-              <div class="mailchimp-form ">
-                <form class="one-field-form" method="post" action="#0">
-                  <div class="field-group ">
-                    <label class="email-label" for="email-input"> Subscribe to our news letter</label>
-                    <input class="email-input " type="email" value="" name="EMAIL" id="email-input" placeholder="Email Address" autocomplete="off"/>
+            <div class="form-area">
+              <div class="mailchimp-form">
+                <form class="one-field-form" id="subscription-form" method="post" action="#">
+                  <div class="field-group">
+                    <label class="email-label" for="email-input">Subscribe to our newsletter</label>
+                    <input class="email-input" type="email" value="" name="EMAIL" id="email-input" placeholder="Email Address" autocomplete="off" required/>
                     <div class="cta-area">
-                      <input class="btn-solid subscribe-btn" type="submit" value="Subscribe" name="subscribe"/>
+                      <input class="btn-solid subscribe-btn" type="submit" value="Subscribe" name="subscribe"  />
+                      <div class="loading-icon" style="display: none;"><img src="assets/images/icons/1491(2).gif" style="height: 50px;" alt="Loading..."></div>
                     </div>
-                  </div><span class="email-notice">*we will not share your personal info</span>
+                  </div>
+                  <span class="email-notice">*We will not share your personal info</span>
                 </form>
+                <div class="subscription-message">Thanks for Subscribing!</div>
               </div>
             </div>
+            
           </div>
-          <div class="col-6 col-lg-2  footer-col ">
+          <!-- <div class="col-6 col-lg-2  footer-col ">
             <h2 class=" footer-col-title    ">useful links</h2>
             <div class="footer-col-content-wrapper">
               <ul class="footer-menu ">
@@ -379,8 +383,8 @@
                 </li>
               </ul>
             </div>
-          </div>
-          <div class="col-6 col-lg-2 footer-col ">
+          </div> -->
+          <!-- <div class="col-6 col-lg-2 footer-col ">
             <h2 class=" footer-col-title    ">Resources</h2>
             <div class="footer-col-content-wrapper">
               <ul class="footer-menu">
@@ -394,8 +398,8 @@
                 </li>
               </ul>
             </div>
-          </div>
-          <div class="col-12     col-lg-4 footer-col ">
+          </div> -->
+          <!-- <div class="col-12     col-lg-4 footer-col ">
             <h2 class=" footer-col-title    ">contact information</h2>
             <div class="footer-col-content-wrapper">       
               <div class="contact-info-card"><i class="bi bi-envelope icon"></i><a class="text-lowercase  info" href="mailto:example@support.com">example@support.com</a></div>
@@ -414,7 +418,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="copyrights ">
@@ -439,6 +443,8 @@
         </div>
       </div>
     </footer>
+    
+
     <!-- End  page-footer Section-->
     <!-- Start loading-screen Component-->
     <div class="loading-screen" id="loading-screen"><span class="bar top-bar"></span><span class="bar down-bar"></span><span class="progress-line"></span><span class="loading-counter"> </span></div>
